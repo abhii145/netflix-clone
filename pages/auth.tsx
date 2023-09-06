@@ -27,7 +27,7 @@ const Auth = () => {
       email,
       password,
       redirect: false,
-      callbackUrl:'/'
+      callbackUrl: "/",
     }).then((callback) => {
       if (callback?.ok) {
         toast.success("Logged in");
