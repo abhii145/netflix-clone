@@ -1,6 +1,7 @@
 import useBillboard from "@/hooks/useBillboard";
 import React from "react";
-import { InformationCircleIcon } from '@heroicons/react/24/outline';
+import { InformationCircleIcon } from "@heroicons/react/24/outline";
+import PlayButton from "./PlayButton";
 
 const Billboard = () => {
   const { data } = useBillboard();
@@ -15,15 +16,15 @@ const Billboard = () => {
         src={data?.videoUrl}
       ></video>
       <div className="absolute top-[30%] md:top-[40%] ml-4 md:ml-16">
-      <p className="text-white text-1xl md:text-5xl h-full w-[50%] lg:text-6xl font-bold drop-shadow-xl">
+        <p className="text-white text-1xl md:text-5xl h-full w-[50%] lg:text-6xl font-bold drop-shadow-xl">
           {data?.title}
         </p>
         <p className="text-white text-[8px] md:text-lg mt-3 md:mt-8 w-[90%] md:w-[80%] lg:w-[50%] drop-shadow-xl">
           {data?.description}
         </p>
         <div className="flex flex-row items-center mt-3 md:mt-4 gap-3">
-        <button
-           
+          <PlayButton movieId={data?.id} />
+          <button
             className="
             bg-white
             text-white
@@ -40,9 +41,9 @@ const Billboard = () => {
               hover:bg-opacity-20
               transition
             "
-            >
-              <InformationCircleIcon className="w-4 md:w-7 mr-1" />
-              More Info
+          >
+            <InformationCircleIcon className="w-4 md:w-7 mr-1" />
+            More Info
           </button>
         </div>
       </div>
