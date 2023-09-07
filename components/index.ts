@@ -1,6 +1,7 @@
 import AccountMenu from "./AccountMenu";
 import Billboard from "./Billboard";
 import FavoriteButton from "./FavoriteButton";
+import InfoModal from "./InfoModal";
 import Input from "./Input";
 import MobileMenu from "./MobileMenu";
 import MovieCard from "./MovieCard";
@@ -18,4 +19,5 @@ export {
   MovieList,
   MovieCard,
   FavoriteButton,
+  InfoModal,
 };
