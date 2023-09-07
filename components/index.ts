@@ -1,5 +1,6 @@
 import AccountMenu from "./AccountMenu";
 import Billboard from "./Billboard";
+import FavoriteButton from "./FavoriteButton";
 import Input from "./Input";
 import MobileMenu from "./MobileMenu";
 import MovieCard from "./MovieCard";
@@ -16,4 +17,5 @@ export {
   MobileMenu,
   MovieList,
   MovieCard,
+  FavoriteButton,
 };
