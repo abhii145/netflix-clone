@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { Billboard, Navbar } from "@/components";
 import useCurrentUser from "@/hooks/useCurrentUser";
 import { NextPageContext } from "next";
 import { getSession, signOut } from "next-auth/react";
@@ -19,11 +19,12 @@ export async function getServerSideProps(context: NextPageContext) {
 }
 
 export default function Home() {
-  const {data:user} = useCurrentUser();
-  console.log(user?.name)
+  const { data: user } = useCurrentUser();
+  console.log(user?.name);
   return (
     <>
-     <Navbar/>
+      <Navbar />
+      <Billboard />
     </>
   );
 }

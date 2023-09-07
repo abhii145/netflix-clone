@@ -6,10 +6,9 @@ import {
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import MobileMenu from "@/components/MobileMenu";
-import NavbarItem from "@/components/NavbarItem";
-import AccountMenu from "@/components/AccountMenu";
+import { AccountMenu, MobileMenu, NavbarItem } from ".";
 const TOP_OFFSET = 66;
+
 
 const Navbar = () => {
   const [showAccountMenu, setShowAccountMenu] = useState(false);
